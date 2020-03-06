@@ -8,5 +8,5 @@ class Binarios : public Numero{
     Binarios(string);
     string toString();
     Binarios &operator+(Numero);
-
+    int toInt();
 };

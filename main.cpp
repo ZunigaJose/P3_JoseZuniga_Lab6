@@ -30,14 +30,17 @@ void meterVect(string num) {
 }
 
 void imprimir() {
+  cout << endl;
   for (size_t i = 0; i < valores.size(); i++) {
-    cout << i << ": " << valores[i].toString() << endl;
+    cout << i << ": " << valores[i] -> toString() << endl;
   }
+  cout << endl;
 }
 
 int menu() {
   int op;
   cout << "0. Salir\n1. Ingresar numero\n2. Listar Numeros\n3. Operacion: ";
+  cin >> op;
   if (op < 0 || op > 3) {
     return menu();
   }

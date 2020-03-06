@@ -9,5 +9,6 @@ class Numero {
     string numero;
   public:
     Numero(string);
-    virtual string toString() = 0;
+    virtual string toString() {return "";}
+    virtual int toInt() {return 0; }
 };

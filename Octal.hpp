@@ -7,4 +7,5 @@ class Octal : public Numero {
   public:
     Octal(string);
     string toString();
+    int toInt();
 };

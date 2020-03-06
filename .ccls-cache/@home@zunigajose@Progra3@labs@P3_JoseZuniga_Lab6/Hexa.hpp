@@ -7,4 +7,5 @@ class Hexa : public Numero {
   public:
     Hexa(string);
     string toString();
+    int toInt();
 };

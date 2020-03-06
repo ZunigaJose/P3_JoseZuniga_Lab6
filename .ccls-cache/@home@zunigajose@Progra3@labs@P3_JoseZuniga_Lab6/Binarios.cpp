@@ -8,3 +8,7 @@ Binarios::Binarios(string numero) :  Numero(numero) {
 string Binarios::toString() {
   return numero;
 }
+
+Binarios &Binarios::operator-(Numero z) {
+
+}

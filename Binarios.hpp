@@ -7,4 +7,6 @@ class Binarios : public Numero{
   public:
     Binarios(string);
     string toString();
+    Binarios &operator+(Numero);
+
 };

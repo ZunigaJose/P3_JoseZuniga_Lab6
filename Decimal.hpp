@@ -1,10 +1,11 @@
 #pragma once
-#include <string>
 #include "Numero.hpp"
+#include <string>
+
 using namespace std;
 
-class Hexa : public Numero {
+class Decimal : public Numero {
   public:
-    Hexa(string);
+    Decimal(string);
     string toString();
 };

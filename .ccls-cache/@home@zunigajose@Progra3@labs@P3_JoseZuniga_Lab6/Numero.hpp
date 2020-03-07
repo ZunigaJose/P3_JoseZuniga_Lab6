@@ -11,4 +11,7 @@ class Numero {
     Numero(string);
     virtual string toString() {return "";}
     virtual int toInt() {return 0; }
+    string Bin(int);
+    string Oct(int);
+    string Hex(int);
 };

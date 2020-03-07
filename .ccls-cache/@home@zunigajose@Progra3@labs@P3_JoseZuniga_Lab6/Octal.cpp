@@ -19,5 +19,5 @@ int Octal::toInt() {
     oct /= 10;
     i++;
   }
-  return 0; //falta de que u
+  return decimal; //falta de que u
 }

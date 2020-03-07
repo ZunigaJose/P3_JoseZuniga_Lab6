@@ -94,6 +94,10 @@ int main() {
         imprimir();
       break;
       case 3:
+      if(valores.size() < 2) {
+        cout << "Aun no ha ingresado suficientes valores!";
+        break;
+      }
         subOp = subM();
         num1 = elegir();
         num2 = elegir();
@@ -105,7 +109,7 @@ int main() {
             n = (*valores[num1]) - (*valores[num2]);
           break;
           case 3:
-            n = (*valores[num1]) * (*valores[num2]);
+            n = ((*valores[num1])) * ((*valores[num2]));
           break;
         }
       break;

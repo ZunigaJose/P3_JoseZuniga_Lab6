@@ -12,7 +12,10 @@ string Binarios::toString() {
 
 Numero Binarios::operator* (Numero x) {
   int n1 = toInt();
-  int suma = n1 * x.toInt();
+  int suma;
+  for (int i = 0; i < x.toInt(); i++) {
+    suma = n1 + x.toInt();
+  }
   cout << "Suma:\n";
   cout << "Bin: " << x.Bin(suma) << endl;
   cout << "Hexa: "<< x.Hex(suma) << endl;

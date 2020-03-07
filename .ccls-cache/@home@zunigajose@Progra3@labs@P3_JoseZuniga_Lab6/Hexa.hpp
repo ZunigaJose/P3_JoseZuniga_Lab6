@@ -6,6 +6,7 @@ using namespace std;
 class Hexa : public Numero {
   public:
     Hexa(string);
+    //Numero operator+ (Numero x);
     string toString();
     int toInt();
 };

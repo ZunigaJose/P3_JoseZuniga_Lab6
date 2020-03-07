@@ -23,10 +23,14 @@ void meterVect(string num) {
     } else if(sub == "0x") {
       valores.push_back(dynamic_cast<Numero*>(new Hexa(num)));
       dentro = true;
-    } else if(!dentro){
+    } else if(!dentro) {
       valores.push_back(dynamic_cast<Numero*>(new Decimal(num)));
     }
   }
+}
+
+void identificar(int num1,int num2) {
+
 }
 
 void imprimir() {
@@ -95,7 +99,7 @@ int main() {
         num2 = elegir();
         switch (subOp) {
           case 1:
-            n = static_cast<valores[num1] + valores[num2];
+            n = (*valores[num1]) + (*valores[num2]);
           break;
         }
       break;

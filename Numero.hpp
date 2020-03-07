@@ -10,6 +10,7 @@ class Numero {
   public:
     Numero(string);
     virtual string toString() {return "";}
+    virtual Numero operator+ (Numero) { return Numero("");}
     virtual int toInt() {return 0; }
     string Bin(int);
     string Oct(int);

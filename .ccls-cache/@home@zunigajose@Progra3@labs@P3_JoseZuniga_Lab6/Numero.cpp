@@ -1,11 +1,18 @@
 #include "Numero.hpp"
 #include <string>
+#include <bits/stdc++.h>
 
 Numero::Numero(string numero) {
   this -> numero = numero;
 }
-string Numero::Bin() {
-  
+string Numero::Bin(int decimal) {
+  string bin = "";
+  while (decimal > 0) {
+    bin += to_string(decimal % 2);
+    decimal /= 2;
+  }
+  reverse(bin.begin(), bin.end());
+  return bin;
 }
 
 string Numero::Oct(int decimal) {

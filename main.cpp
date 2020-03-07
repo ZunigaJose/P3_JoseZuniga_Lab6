@@ -54,8 +54,32 @@ void ingresoN() {
   meterVect(n);
 }
 
-int main() {
+int subM() {
   int op;
+  cout << "1. Sumar\n2. Resta\n3. Multiplicacion: ";
+  cin >> op;
+  if (op < 1 || op > 3) {
+      return subM();
+  }
+  return op;
+}
+
+int elegir() {
+  int op;
+  imprimir();
+  cout << "Elija su opcion: ";
+  cin >> op;
+  while (op < 0 || op > valores.size()) {
+    cout << "Debe de elegir una opcion correcta!" << endl;
+    cout << "Elija su opcion: ";
+    cin >> op;
+  }
+  return op;
+}
+
+int main() {
+  int op, subOp, num1, num2;
+  Numero n(0);
   do {
     op = menu();
     switch (op) {
@@ -64,6 +88,16 @@ int main() {
       break;
       case 2:
         imprimir();
+      break;
+      case 3:
+        subOp = subM();
+        num1 = elegir();
+        num2 = elegir();
+        switch (subOp) {
+          case 1:
+            n = static_cast<valores[num1] + valores[num2];
+          break;
+        }
       break;
     }
   } while(op);

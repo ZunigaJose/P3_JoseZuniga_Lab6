@@ -109,7 +109,7 @@ int main() {
             n = (*valores[num1]) - (*valores[num2]);
           break;
           case 3:
-            n = ((*valores[num1])) * ((*valores[num2]));
+            n = ((*valores[num1]))*((*valores[num2]));
           break;
         }
       break;

@@ -9,5 +9,6 @@ class Binarios : public Numero{
     string toString();
     Numero operator+ (Numero);
     Numero operator- (Numero x);
+    Numero operator* (Numero x);
     int toInt();
 };

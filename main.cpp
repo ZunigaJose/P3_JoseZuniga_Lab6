@@ -101,6 +101,12 @@ int main() {
           case 1:
             n = (*valores[num1]) + (*valores[num2]);
           break;
+          case 2:
+            n = (*valores[num1]) - (*valores[num2]);
+          break;
+          case 3:
+            n = (*valores[num1]) * (*valores[num2]);
+          break;
         }
       break;
     }

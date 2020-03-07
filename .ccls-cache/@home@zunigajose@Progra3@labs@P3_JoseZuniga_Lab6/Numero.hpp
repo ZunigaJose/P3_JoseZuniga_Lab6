@@ -12,6 +12,7 @@ class Numero {
     virtual string toString() {return "";}
     virtual Numero operator+ (Numero x) {return Numero("");}
     virtual Numero operator- (Numero x) {return Numero("");}
+    virtual Numero operator* (Numero x) {return Numero("");}
     int toInt() { return 0;};
     string Bin(int);
     string Oct(int);

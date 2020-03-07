@@ -8,6 +8,7 @@ class Hexa : public Numero {
     Hexa(string);
     Numero operator+ (Numero x);
     Numero operator- (Numero x);
+    Numero operator* (Numero x);
     string toString();
     int toInt();
 };

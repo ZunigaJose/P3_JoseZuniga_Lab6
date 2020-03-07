@@ -19,8 +19,7 @@ Binarios &Binarios::operator+(Numero x) {
 int Binarios::toInt() {
   int n = (stoi(numero.substr(0, numero.length() - 2)));
   int num = 0, i = 0, remainder;
-    while (n!=0)
-    {
+    while (n!=0) {
         remainder = n%10;
         n /= 10;
         num += remainder*pow(2,i);

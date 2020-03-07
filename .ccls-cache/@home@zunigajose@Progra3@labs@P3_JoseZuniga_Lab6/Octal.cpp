@@ -9,8 +9,18 @@ Octal::Octal(string numero) : Numero(numero) {
 string Octal::toString() {
   return numero;
 }
+Numero Octal::operator- (Numero x) {
+  int n1 = toInt();
+  int suma = n1 - x.toInt();
+  cout << "Suma:\n";
+  cout << "Bin: " << x.Bin(suma) << endl;
+  cout << "Hexa: "<< x.Hex(suma) << endl;
+  cout << "Octal: "<< x.Oct(suma) << endl;
+  cout << "Decimal: " << suma << endl;
+  return (Numero)(Octal(to_string(suma)));
+}
 
-Numero Numero::operator+ (Numero x) {
+Numero Octal::operator+ (Numero x) {
   int n1 = toInt();
   int suma = n1 + x.toInt();
   cout << "Suma:\n";

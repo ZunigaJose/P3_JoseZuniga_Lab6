@@ -83,7 +83,7 @@ int elegir() {
 
 int main() {
   int op, subOp, num1, num2;
-  Numero n(0);
+  Numero n("");
   do {
     op = menu();
     switch (op) {

@@ -10,7 +10,18 @@ string Binarios::toString() {
   return numero;
 }
 
-Numero Numero::operator+ (Numero x) {
+Numero Binarios::operator- (Numero x) {
+  int n1 = toInt();
+  int suma = n1 - x.toInt();
+  cout << "Suma:\n";
+  cout << "Bin: " << x.Bin(suma) << endl;
+  cout << "Hexa: "<< x.Hex(suma) << endl;
+  cout << "Octal: "<< x.Oct(suma) << endl;
+  cout << "Decimal: " << suma << endl;
+  return (Numero)(Binarios(to_string(suma)));
+}
+
+Numero Binarios::operator+ (Numero x) {
   int n1 = toInt();
   int suma = n1 + x.toInt();
   cout << "Suma:\n";
